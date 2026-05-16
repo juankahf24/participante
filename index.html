@@ -1,6 +1,6 @@
 <!DOCTYPE html><html lang="es"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0"><title>MILITOPO Participante</title>
 <style>
-:root{--p:#344724;--g:#f0c16a;--c:#f5e6c8;--m:#cbb894;--r:#c85e45;--v:#8bb56a}*{box-sizing:border-box}body{margin:0;background:linear-gradient(180deg,#10190b,#202916,#151b10);color:var(--c);font-family:"Courier New",monospace}.app{max-width:760px;margin:auto;padding:16px 12px 44px}.card{border-radius:28px;margin:0 0 16px;padding:18px;background:radial-gradient(circle at 88% 10%,rgba(240,193,106,.13),transparent 26%),linear-gradient(180deg,rgba(255,255,255,.09),rgba(255,255,255,.035)),var(--p);border:1px solid rgba(230,188,122,.28);box-shadow:0 18px 44px rgba(0,0,0,.26)}h1,h2{margin:0 0 12px;color:var(--g);letter-spacing:2px}.status{border-radius:18px;padding:12px;margin-top:10px;background:rgba(0,0,0,.16);border:1px solid rgba(230,188,122,.35);font-weight:900;line-height:1.35}.ok{border-color:rgba(139,181,106,.6);background:rgba(139,181,106,.16)}.err{border-color:rgba(200,94,69,.6);background:rgba(200,94,69,.14)}.btn{width:100%;min-height:54px;border:0;border-radius:999px;margin-top:10px;font-family:inherit;font-weight:900;letter-spacing:.8px;background:linear-gradient(180deg,var(--g),#d79735);color:#261708}.green{background:linear-gradient(180deg,#8bb56a,#5f8838);color:#f7ffe9}.red{background:linear-gradient(180deg,#c85e45,#963d2b);color:#fff4e9}.secondary{background:linear-gradient(180deg,#573a22,#332419);color:var(--c)}input,textarea{width:100%;min-height:48px;border-radius:16px;border:1px solid rgba(230,188,122,.45);background:linear-gradient(180deg,#4e3722,#33261b);color:var(--c);font-family:inherit;font-weight:900;padding:12px;margin-top:10px}.route{font-size:1rem;line-height:1.55;font-weight:900}.next{font-size:clamp(1.5rem,8vw,2.6rem);text-align:center;color:var(--g);padding:16px;border-radius:22px;background:rgba(0,0,0,.18);border:1px solid rgba(230,188,122,.35);margin-top:12px}.scan{display:grid;grid-template-columns:82px 1fr auto;gap:8px;border-radius:14px;padding:10px;margin-top:8px;background:rgba(0,0,0,.15);border:1px solid rgba(230,188,122,.2)}.scan.ok{border-color:rgba(139,181,106,.5)}.scan.bad{border-color:rgba(200,94,69,.6)}video{width:100%;max-height:380px;border-radius:18px;background:#111;object-fit:cover;margin-top:10px}.qr img{width:270px;max-width:100%;background:#fff;padding:12px;border-radius:18px;image-rendering:pixelated}.qr{text-align:center;margin-top:12px}.small{color:var(--m);font-size:.82rem;line-height:1.35}
+:root{--p:#344724;--g:#f0c16a;--c:#f5e6c8;--m:#cbb894;--r:#c85e45;--v:#8bb56a}*{box-sizing:border-box}body{margin:0;background:linear-gradient(180deg,#10190b,#202916,#151b10);color:var(--c);font-family:"Courier New",monospace}.app{max-width:760px;margin:auto;padding:16px 12px 44px}.card{border-radius:28px;margin:0 0 16px;padding:18px;background:radial-gradient(circle at 88% 10%,rgba(240,193,106,.13),transparent 26%),linear-gradient(180deg,rgba(255,255,255,.09),rgba(255,255,255,.035)),var(--p);border:1px solid rgba(230,188,122,.28);box-shadow:0 18px 44px rgba(0,0,0,.26)}h1,h2{margin:0 0 12px;color:var(--g);letter-spacing:2px}.status{border-radius:18px;padding:12px;margin-top:10px;background:rgba(0,0,0,.16);border:1px solid rgba(230,188,122,.35);font-weight:900;line-height:1.35}.ok{border-color:rgba(139,181,106,.6);background:rgba(139,181,106,.16)}.err{border-color:rgba(200,94,69,.6);background:rgba(200,94,69,.14)}.btn{width:100%;min-height:54px;border:0;border-radius:999px;margin-top:10px;font-family:inherit;font-weight:900;letter-spacing:.8px;background:linear-gradient(180deg,var(--g),#d79735);color:#261708}.green{background:linear-gradient(180deg,#8bb56a,#5f8838);color:#f7ffe9}.red{background:linear-gradient(180deg,#c85e45,#963d2b);color:#fff4e9}.secondary{background:linear-gradient(180deg,#573a22,#332419);color:var(--c)}input,textarea{width:100%;min-height:48px;border-radius:16px;border:1px solid rgba(230,188,122,.45);background:linear-gradient(180deg,#4e3722,#33261b);color:var(--c);font-family:inherit;font-weight:900;padding:12px;margin-top:10px}.route{font-size:1rem;line-height:1.55;font-weight:900}.next{font-size:clamp(1.5rem,8vw,2.6rem);text-align:center;color:var(--g);padding:16px;border-radius:22px;background:rgba(0,0,0,.18);border:1px solid rgba(230,188,122,.35);margin-top:12px}.scan{display:grid;grid-template-columns:82px 1fr auto;gap:8px;border-radius:14px;padding:10px;margin-top:8px;background:rgba(0,0,0,.15);border:1px solid rgba(230,188,122,.2)}.scan.ok{border-color:rgba(139,181,106,.5)}.scan.bad{border-color:rgba(200,94,69,.6)}video{width:100%;max-height:380px;border-radius:18px;background:#111;object-fit:cover;margin-top:10px}.qr img{width:270px;max-width:100%;background:#fff;padding:12px;border-radius:18px;image-rendering:pixelated}.qr{text-align:center;margin-top:12px}.small{color:var(--m);font-size:.82rem;line-height:1.35}.result-qr-instruction{margin:12px auto 10px;padding:14px 12px;border-radius:18px;background:linear-gradient(180deg,#f0c16a,#d79735);color:#24170a;font-weight:900;text-align:center;line-height:1.35;border:2px solid rgba(255,255,255,.55);box-shadow:0 10px 28px rgba(0,0,0,.35);font-size:1rem;max-width:310px}
 
 .camera-overlay{position:fixed;inset:0;z-index:99999;background:rgba(4,10,4,.96);display:none;align-items:center;justify-content:center;padding:14px}
 .camera-overlay.active{display:flex}
@@ -8,6 +8,12 @@
 .camera-title{font-weight:900;color:#f0c16a;letter-spacing:1px;font-size:1.25rem;margin-bottom:10px;text-align:center}
 .camera-video{width:100%;height:min(58vh,470px);min-height:280px;border-radius:20px;background:#050505;object-fit:cover;display:block;border:2px solid rgba(240,193,106,.35)}
 .camera-help{font-size:.86rem;color:#cbb894;line-height:1.35;margin-top:10px;text-align:center}
+
+
+.offline-safe{border:2px solid rgba(240,193,106,.65);background:rgba(240,193,106,.13);box-shadow:0 10px 28px rgba(0,0,0,.28)}
+.recovery-actions{display:grid;grid-template-columns:1fr;gap:8px;margin-top:10px}
+.save-pill{display:inline-block;margin-top:8px;padding:6px 10px;border-radius:999px;background:rgba(139,181,106,.18);border:1px solid rgba(139,181,106,.55);font-size:.78rem;font-weight:900;color:#eaffd8}
+.big-warn{font-size:1.05rem;border-width:2px!important;text-align:center}
 
 </style><script>
 /* QR offline embebido para MILITOPO. Basado en QRCode for JavaScript (Kazuhiko Arase, MIT) */
@@ -1397,7 +1403,7 @@ module.exports = QRCode;
 <section class="card"><h1>📱 MILITOPO PARTICIPANTE</h1><div id="eventInfo" class="status"></div></section>
 <section class="card"><h2>1 · Cargar recorrido</h2><div id="identity" class="status">Escanea tu QR de participante.</div><button class="btn green" onclick="startQrCamera()">📷 ESCANEAR QR</button><button class="btn secondary" onclick="manual('participant')">✍️ MANUAL</button><input id="manualInput" placeholder="Pega aquí QR si falla cámara" style="display:none"><button id="manualBtn" class="btn" onclick="loadManual()" style="display:none">CARGAR MANUAL</button></section>
 <section id="race" class="card" style="display:none"><h2>2 · Carrera</h2><div id="route" class="status"></div><div id="next" class="next">--</div><button class="btn green" onclick="startQrCamera()">📷 ESCANEAR QR</button><button class="btn secondary" onclick="manual('control')">✍️ MANUAL</button><div id="scans" style="margin-top:14px"></div></section>
-<section id="result" class="card" style="display:none"><h2>3 · Resultado</h2><div id="summary" class="status ok"></div><div id="resultQr" class="qr"></div><textarea id="resultText" readonly></textarea><button class="btn secondary" onclick="copyResult()">📋 COPIAR</button><button class="btn" onclick="downloadResult()">📤 DESCARGAR JSON</button><div class="small">Enseña este QR final al organizador.</div></section></div>
+<section id="result" class="card" style="display:none"><h2>3 · Resultado</h2><div id="summary" class="status ok"></div><div id="resultQr" class="qr"></div><div class="result-qr-instruction">📲 ENSEÑA ESTE QR DE RESULTADOS AL ORGANIZADOR</div><textarea id="resultText" readonly></textarea><button class="btn secondary" onclick="copyResult()">📋 COPIAR</button><button class="btn" onclick="downloadResult()">📤 DESCARGAR JSON</button></section></div>
 <div id="cameraOverlay" class="camera-overlay">
   <div class="camera-shell">
     <div id="cameraTitle" class="camera-title">LECTOR QR</div>
@@ -1411,57 +1417,150 @@ module.exports = QRCode;
 
 <div id="toast" style="display:none;position:fixed;bottom:18px;left:50%;transform:translateX(-50%);background:#1c2414;color:#f5e6c8;border-radius:999px;padding:12px 16px;font-weight:900"></div>
 <script>
-const EVENT_DATA={"version":"orientacion_v1_offline","eventId":"ORI_20260508_OI8LH","eventName":"Segura","createdAt":"2026-05-10T20:56:21.646Z","config":{"participantCount":2,"controlCount":8,"controlsPerRoute":4,"maxControlReuse":6,"balance":{"distance":0.5,"climb":0.5},"liveReadyInternals":true,"liveVisible":false},"points":{"START":{"id":"START","type":"SALIDA","utm":"30T 657404 4212138","desc":"SALIDA · SANTA BÁRBARA","lat":38.0433,"lon":-1.2062,"elevation":86},"FINISH":{"id":"FINISH","type":"LLEGADA","utm":"30T 658062 4211729","desc":"LLEGADA · SANTA BÁRBARA","lat":38.0395,"lon":-1.1988,"elevation":110},"B01":{"id":"B01","type":"BALIZA","utm":"30T 658005 4211961","desc":"CONTROL B01 · SANTA BÁRBARA","lat":38.0416,"lon":-1.1994,"elevation":108},"B02":{"id":"B02","type":"BALIZA","utm":"30T 657832 4212179","desc":"CONTROL B02 · SANTA BÁRBARA","lat":38.04359240531783,"lon":-1.2013213841112251,"elevation":92},"B03":{"id":"B03","type":"BALIZA","utm":"30T 657530 4212112","desc":"CONTROL B03 · SANTA BÁRBARA","lat":38.04303987069319,"lon":-1.2047775013040398,"elevation":104},"B04":{"id":"B04","type":"BALIZA","utm":"30T 657461 4211852","desc":"CONTROL B04 · SANTA BÁRBARA","lat":38.04071586218274,"lon":-1.2056176292183651,"elevation":87},"B05":{"id":"B05","type":"BALIZA","utm":"30T 657708 4211733","desc":"CONTROL B05 · SANTA BÁRBARA","lat":38.03959750291475,"lon":-1.202834843334845,"elevation":99},"B06":{"id":"B06","type":"BALIZA","utm":"30T 657973 4211890","desc":"CONTROL B06 · SANTA BÁRBARA","lat":38.04097011126267,"lon":-1.1997731292007534,"elevation":108},"B07":{"id":"B07","type":"BALIZA","utm":"30T 657940 4212112","desc":"CONTROL B07 · SANTA BÁRBARA","lat":38.04297586695005,"lon":-1.2001076774315123,"elevation":101},"B08":{"id":"B08","type":"BALIZA","utm":"30T 657648 4212132","desc":"CONTROL B08 · SANTA BÁRBARA","lat":38.04320029479741,"lon":-1.2034320047844866,"elevation":101}},"routes":[{"participantId":"P01","routeId":"R01","points":["START","B03","B08","B01","B06","FINISH"]},{"participantId":"P02","routeId":"R02","points":["START","B04","B05","B02","B07","FINISH"]}],"metrics":[{"distanceKm":0.904,"longestKm":0.395,"positiveM":27,"negativeM":3,"globalM":24,"difficulty":"BAJA","difficultyScore":0.466},{"distanceKm":1.559,"longestKm":0.464,"positiveM":31,"negativeM":7,"globalM":24,"difficulty":"MEDIA","difficultyScore":0.795}],"iofDescriptions":{"START":{"c":"","d":"edificio","e":"","f":"","g":"","h":"","combo":"","text":"SALIDA · SANTA BÁRBARA","complete":true},"FINISH":{"c":"sureste","d":"","e":"","f":"","g":"","h":"","combo":"","text":"LLEGADA · SANTA BÁRBARA","complete":true},"B01":{"c":"","d":"","e":"caducifolio_hoja_ancha","f":"","g":"al_pie","h":"","combo":"","text":"","complete":true},"B02":{"c":"","d":"","e":"bajo","f":"","g":"entre_dos_objetos","h":"","combo":"","text":"","complete":true},"B03":{"c":"","d":"campo_abierto","e":"","f":"altura_pendiente","g":"punta_sudoeste","h":"","combo":"","text":"","complete":true},"B04":{"c":"","d":"","e":"","f":"tamano","g":"esquina_norte_dentro","h":"","combo":"","text":"","complete":true},"B05":{"c":"","d":"cerca_valla","e":"","f":"","g":"esquina_este_fuera","h":"","combo":"","text":"","complete":true},"B06":{"c":"","d":"pantano","e":"","f":"","g":"parte_inferior","h":"","combo":"","text":"","complete":true},"B07":{"c":"","d":"afloramiento_rocoso","e":"","f":"","g":"debajo_inferior","h":"","combo":"","text":"","complete":true},"B08":{"c":"","d":"colina","e":"profundo","f":"","g":"esquina_norte_dentro","h":"","combo":"","text":"","complete":true},"B09":{"c":"","d":"","e":"","f":"","g":"al_pie","h":"","combo":"","text":"","complete":true},"B10":{"c":"","d":"puente","e":"","f":"","g":"debajo_inferior","h":"","combo":"","text":"","complete":true},"B11":{"c":"","d":"grupo_piedras","e":"","f":"","g":"parte_superior","h":"","combo":"","text":"","complete":true},"B12":{"c":"","d":"campo_piedras","e":"pantanoso","f":"","g":"entre_dos_objetos","h":"","combo":"","text":"","complete":true},"B13":{"c":"","d":"bosquecillo","e":"","f":"","g":"punta_sudoeste","h":"","combo":"","text":"","complete":true},"B14":{"c":"","d":"manantial","e":"","f":"","g":"borde_este","h":"","combo":"","text":"","complete":true},"B15":{"c":"","d":"lago","e":"","f":"","g":"punta_sudoeste","h":"","combo":"","text":"","complete":true},"B16":{"c":"noroeste","d":"","e":"","f":"","g":"encima_superior","h":"","combo":"","text":"","complete":true},"B17":{"c":"","d":"hoyo_agua","e":"en_ruinas_caido","f":"","g":"norte_exterior","h":"","combo":"","text":"","complete":true},"B18":{"c":"","d":"","e":"caducifolio_hoja_ancha","f":"altura_dos_objetos","g":"debajo_inferior","h":"","combo":"cruce","text":"","complete":true},"B19":{"c":"","d":"","e":"","f":"","g":"entre_dos_objetos","h":"","combo":"union_carreteras","text":"","complete":true},"B20":{"c":"","d":"puente","e":"","f":"","g":"punta_sudoeste","h":"","combo":"","text":"","complete":true},"B21":{"c":"","d":"charca","e":"","f":"","g":"al_pie","h":"","combo":"","text":"","complete":true},"B22":{"c":"derecha","d":"campo_semiabierto","e":"","f":"altura_profundidad","g":"en_curva","h":"","combo":"","text":"","complete":false},"B23":{"c":"","d":"","e":"","f":"","g":"punta_sudoeste","h":"","combo":"","text":"","complete":true},"B24":{"c":"","d":"manantial","e":"suave_poco_profundo","f":"","g":"parte_inferior","h":"","combo":"","text":"","complete":true},"B25":{"c":"","d":"pantano_estrecho","e":"arenoso","f":"","g":"esquina_norte_dentro","h":"","combo":"","text":"","complete":true}}};let route=null,pid=null,log=null,stream=null,running=false,detector=null,useJsQr=false,last="",lastT=0;
+const EVENT_DATA={"version":"orientacion_v1_offline","eventId":"ORI_20260515_F5PPM","eventName":"Segura","createdAt":"2026-05-16T21:56:23.783Z","config":{"participantCount":2,"controlCount":30,"controlsPerRoute":15,"maxControlReuse":10,"balance":{"distance":0.5,"climb":0.5},"liveReadyInternals":true,"liveVisible":false},"points":{"START":{"id":"START","type":"SALIDA","utm":"30T 657404 4212135","desc":"SALIDA · SANTA BÁRBARA","lat":38.04327312847359,"lon":-1.2062057539863782,"elevation":86},"FINISH":{"id":"FINISH","type":"LLEGADA","utm":"30T 658062 4211729","desc":"LLEGADA · SANTA BÁRBARA","lat":38.0395,"lon":-1.1988,"elevation":110},"B01":{"id":"B01","type":"BALIZA","utm":"30T 658005 4211961","desc":"CONTROL B01 · SANTA BÁRBARA","lat":38.0416,"lon":-1.1994,"elevation":108},"B02":{"id":"B02","type":"BALIZA","utm":"30T 657832 4212179","desc":"CONTROL B02 · SANTA BÁRBARA","lat":38.04359240531783,"lon":-1.2013213841112251,"elevation":92},"B03":{"id":"B03","type":"BALIZA","utm":"30T 657530 4212112","desc":"CONTROL B03 · SANTA BÁRBARA","lat":38.04303987069319,"lon":-1.2047775013040398,"elevation":104},"B04":{"id":"B04","type":"BALIZA","utm":"30T 657461 4211852","desc":"CONTROL B04 · SANTA BÁRBARA","lat":38.04071586218274,"lon":-1.2056176292183651,"elevation":87},"B05":{"id":"B05","type":"BALIZA","utm":"30T 657708 4211733","desc":"CONTROL B05 · SANTA BÁRBARA","lat":38.03959750291475,"lon":-1.202834843334845,"elevation":99},"B06":{"id":"B06","type":"BALIZA","utm":"30T 657973 4211890","desc":"CONTROL B06 · SANTA BÁRBARA","lat":38.04097011126267,"lon":-1.1997731292007534,"elevation":108},"B07":{"id":"B07","type":"BALIZA","utm":"30T 657940 4212112","desc":"CONTROL B07 · SANTA BÁRBARA","lat":38.04297586695005,"lon":-1.2001076774315123,"elevation":101},"B08":{"id":"B08","type":"BALIZA","utm":"30T 657648 4212132","desc":"CONTROL B08 · SANTA BÁRBARA","lat":38.04320029479741,"lon":-1.2034320047844866,"elevation":101},"B09":{"id":"B09","type":"BALIZA","utm":"30T 657274 4211978","desc":"CONTROL B09 · SANTA BÁRBARA","lat":38.041878089274974,"lon":-1.2077192630250444,"elevation":82},"B10":{"id":"B10","type":"BALIZA","utm":"30T 657431 4211679","desc":"CONTROL B10 · SANTA BÁRBARA","lat":38.03916487213192,"lon":-1.2059988181672987,"elevation":85},"B11":{"id":"B11","type":"BALIZA","utm":"30T 657860 4211631","desc":"CONTROL B11 · SANTA BÁRBARA","lat":38.0386506722125,"lon":-1.2011248032816175,"elevation":101},"B12":{"id":"B12","type":"BALIZA","utm":"30T 658155 4211850","desc":"CONTROL B12 · SANTA BÁRBARA","lat":38.04057278510181,"lon":-1.197709846315882,"elevation":114},"B13":{"id":"B13","type":"BALIZA","utm":"30T 658045 4212160","desc":"CONTROL B13 · SANTA BÁRBARA","lat":38.043383872467615,"lon":-1.198894859910883,"elevation":114},"B14":{"id":"B14","type":"BALIZA","utm":"30T 657642 4212310","desc":"CONTROL B14 · SANTA BÁRBARA","lat":38.04481004225945,"lon":-1.203456517263779,"elevation":87},"B15":{"id":"B15","type":"BALIZA","utm":"30T 657325 4212151","desc":"CONTROL B15 · SANTA BÁRBARA","lat":38.043426620805285,"lon":-1.2071009075513668,"elevation":81},"B16":{"id":"B16","type":"BALIZA","utm":"30T 657381 4211789","desc":"CONTROL B16 · SANTA BÁRBARA","lat":38.04016132616165,"lon":-1.20654100437177,"elevation":86},"B17":{"id":"B17","type":"BALIZA","utm":"30T 657746 4211558","desc":"CONTROL B17 · SANTA BÁRBARA","lat":38.03801555257411,"lon":-1.2024424626346746,"elevation":102},"B18":{"id":"B18","type":"BALIZA","utm":"30T 658078 4211707","desc":"CONTROL B18 · SANTA BÁRBARA","lat":38.03929905826895,"lon":-1.1986219000637892,"elevation":110},"B19":{"id":"B19","type":"BALIZA","utm":"30T 658245 4212179","desc":"CONTROL B19 · SANTA BÁRBARA","lat":38.04352546401074,"lon":-1.1966135906022946,"elevation":129},"B20":{"id":"B20","type":"BALIZA","utm":"30T 657861 4212527","desc":"CONTROL B20 · SANTA BÁRBARA","lat":38.046724808941434,"lon":-1.2009137936966021,"elevation":100},"B21":{"id":"B21","type":"BALIZA","utm":"30T 657390 4212412","desc":"CONTROL B21 · SANTA BÁRBARA","lat":38.045771728777694,"lon":-1.206307081360472,"elevation":82},"B22":{"id":"B22","type":"BALIZA","utm":"30T 657164 4211953","desc":"CONTROL B22 · SANTA BÁRBARA","lat":38.041679045342626,"lon":-1.2089801022775586,"elevation":83},"B23":{"id":"B23","type":"BALIZA","utm":"30T 657338 4211531","desc":"CONTROL B23 · SANTA BÁRBARA","lat":38.03784490217025,"lon":-1.20709049584403,"elevation":84},"B24":{"id":"B24","type":"BALIZA","utm":"30T 657791 4211440","desc":"CONTROL B24 · SANTA BÁRBARA","lat":38.036940920315025,"lon":-1.201949459763371,"elevation":102},"B25":{"id":"B25","type":"BALIZA","utm":"30T 658206 4211703","desc":"CONTROL B25 · SANTA BÁRBARA","lat":38.03923899011544,"lon":-1.197168141486117,"elevation":118},"B26":{"id":"B26","type":"BALIZA","utm":"30T 658278 4212131","desc":"CONTROL B26 · SANTA BÁRBARA","lat":38.043085492386865,"lon":-1.1962475151981318,"elevation":129},"B27":{"id":"B27","type":"BALIZA","utm":"30T 657938 4212451","desc":"CONTROL B27 · SANTA BÁRBARA","lat":38.04603115152134,"lon":-1.200051405463311,"elevation":103},"B28":{"id":"B28","type":"BALIZA","utm":"30T 657422 4212432","desc":"CONTROL B28 · SANTA BÁRBARA","lat":38.04594920365122,"lon":-1.2059398225273432,"elevation":78},"B29":{"id":"B29","type":"BALIZA","utm":"30T 657118 4212044","desc":"CONTROL B29 · SANTA BÁRBARA","lat":38.04250101240626,"lon":-1.2094882702108865,"elevation":75},"B30":{"id":"B30","type":"BALIZA","utm":"30T 657273 4211554","desc":"CONTROL B30 · SANTA BÁRBARA","lat":38.03806059109966,"lon":-1.2078259912294065,"elevation":85}},"routes":[{"participantId":"P01","routeId":"R01","points":["START","B16","B30","B23","B14","B20","B27","B05","B17","B24","B11","B06","B01","B13","B19","B12","FINISH"]},{"participantId":"P02","routeId":"R02","points":["START","B10","B22","B09","B15","B21","B28","B04","B08","B05","B02","B07","B24","B18","B25","B12","FINISH"]}],"metrics":[{"distanceKm":4.454,"longestKm":0.837,"positiveM":50,"negativeM":26,"globalM":24,"difficulty":"BAJA","difficultyScore":2.252},{"distanceKm":4.871,"longestKm":0.69,"positiveM":50,"negativeM":26,"globalM":24,"difficulty":"MEDIA","difficultyScore":2.461}],"iofDescriptions":{"START":{"c":"","d":"edificio","e":"caducifolio_hoja_ancha","f":"","g":"lado_sureste","h":"","combo":"","text":"SALIDA · SANTA BÁRBARA","complete":true},"FINISH":{"c":"","d":"","e":"","f":"","g":"","h":"","combo":"","text":"LLEGADA · SANTA BÁRBARA","complete":true},"B01":{"c":"sudoeste","d":"cerca_valla","e":"cubierto_maleza","f":"tamano","g":"norte_fin","h":"","combo":"","text":"","complete":true},"B02":{"c":"sureste","d":"","e":"pedregoso_rocoso","f":"altura_pendiente","g":"lado_noroeste","h":"","combo":"","text":"","complete":true},"B03":{"c":"sudoeste","d":"charca","e":"","f":"","g":"parte_norte","h":"","combo":"","text":"","complete":true},"B04":{"c":"","d":"terraza","e":"en_ruinas_caido","f":"","g":"parte_sur","h":"","combo":"cruce","text":"","complete":true},"B05":{"c":"oeste","d":"pantano","e":"","f":"","g":"esquina_sur_interior","h":"","combo":"","text":"","complete":true},"B06":{"c":"","d":"matorral_vegetacion_espesa","e":"","f":"","g":"este_fin","h":"","combo":"","text":"","complete":true},"B07":{"c":"","d":"hoyo_agua","e":"","f":"","g":"borde_noreste","h":"","combo":"","text":"","complete":true},"B08":{"c":"","d":"","e":"arenoso","f":"","g":"borde_noreste","h":"","combo":"","text":"","complete":true},"B09":{"c":"","d":"campo_semiabierto","e":"","f":"","g":"esquina_sur_interior","h":"","combo":"","text":"","complete":true},"B10":{"c":"","d":"campo_abierto","e":"","f":"","g":"parte_superior","h":"","combo":"","text":"","complete":true},"B11":{"c":"","d":"foso_hoyo","e":"","f":"","g":"punta_noroeste","h":"","combo":"","text":"","complete":true},"B12":{"c":"","d":"","e":"","f":"","g":"esquina_este_exterior","h":"","combo":"","text":"","complete":true},"B13":{"c":"","d":"","e":"perenne_hoja_fina","f":"","g":"lado_sureste","h":"","combo":"","text":"","complete":true},"B14":{"c":"","d":"afloramiento_rocoso","e":"cubierto_maleza","f":"","g":"suroeste_fin","h":"","combo":"","text":"","complete":true},"B15":{"c":"","d":"foso_hoyo","e":"bajo","f":"","g":"lado_sudoeste","h":"","combo":"","text":"","complete":true},"B16":{"c":"","d":"","e":"","f":"","g":"sureste_fin","h":"","combo":"","text":"","complete":true},"B17":{"c":"","d":"bosquecillo","e":"","f":"","g":"oeste_fin","h":"","combo":"","text":"","complete":true},"B18":{"c":"","d":"pantano_estrecho","e":"","f":"","g":"noroeste_fin","h":"","combo":"","text":"","complete":true},"B19":{"c":"","d":"","e":"","f":"","g":"parte_oeste","h":"","combo":"","text":"","complete":true},"B20":{"c":"","d":"campo_semiabierto","e":"","f":"","g":"punta_noreste","h":"","combo":"","text":"","complete":true},"B21":{"c":"","d":"manantial","e":"despejado_abierto","f":"","g":"parte_norte","h":"","combo":"","text":"","complete":true},"B22":{"c":"","d":"charca","e":"profundo","f":"","g":"esquina_norte_interior","h":"","combo":"","text":"","complete":true},"B23":{"c":"","d":"","e":"cubierto_maleza","f":"","g":"borde_noroeste","h":"","combo":"","text":"","complete":true},"B24":{"c":"","d":"colina","e":"","f":"","g":"esquina_este_interior","h":"","combo":"","text":"","complete":true},"B25":{"c":"","d":"hoyo_agua","e":"profundo","f":"","g":"parte_oeste","h":"","combo":"","text":"","complete":true},"B26":{"c":"","d":"lago","e":"","f":"","g":"esquina_oeste_exterior","h":"","combo":"","text":"","complete":true},"B27":{"c":"norte","d":"afloramiento_rocoso","e":"","f":"","g":"debajo","h":"","combo":"","text":"","complete":true},"B28":{"c":"izquierda","d":"","e":"suave_poco_profundo","f":"","g":"entre","h":"","combo":"","text":"","complete":true},"B29":{"c":"","d":"roca","e":"suave_poco_profundo","f":"","g":"al_pie_noreste","h":"","combo":"","text":"","complete":true},"B30":{"c":"","d":"foso_hoyo","e":"","f":"","g":"al_pie_sudoeste","h":"","combo":"","text":"","complete":true}}};let route=null,pid=null,log=null,stream=null,running=false,detector=null,useJsQr=false,last="",lastT=0;
+const APP_VERSION="offline-safe-2026-05";
+const JSQR_CACHE_KEY="militopo_jsqr_cache_v1";
+function safeNow(){return new Date().toISOString()}
+function baseKey(){return "militopo_runner_"+EVENT_DATA.eventId}
+function allRecoveryKeys(p){return [baseKey()+"_"+p,baseKey(),baseKey()+"_backup_"+p,baseKey()+"_backup_last",baseKey()+"_emergency_"+p,baseKey()+"_emergency_last"]}
+function normalizeLog(x){
+    if(!x||typeof x!=="object")return null;
+    if(!x.eventId)x.eventId=EVENT_DATA.eventId;
+    if(!Array.isArray(x.scans))x.scans=[];
+    if(!Array.isArray(x.missingControls))x.missingControls=[];
+    return x;
+}
+function chooseBestLog(candidates){
+    const valid=candidates.map(x=>normalizeLog(x)).filter(Boolean);
+    if(!valid.length)return null;
+    valid.sort((a,b)=>{
+        const as=(a.scans||[]).length+(a.startTime?1:0)+(a.finishTime?2:0);
+        const bs=(b.scans||[]).length+(b.startTime?1:0)+(b.finishTime?2:0);
+        if(as!==bs)return bs-as;
+        return String(b.lastSavedAt||"").localeCompare(String(a.lastSavedAt||""));
+    });
+    return valid[0];
+}
+function readJsonKey(k){try{const raw=localStorage.getItem(k)||sessionStorage.getItem(k);return raw?JSON.parse(raw):null}catch(e){return null}}
+function writeKeyEverywhere(k,raw){try{localStorage.setItem(k,raw)}catch(e){} try{sessionStorage.setItem(k,raw)}catch(e){}}
+function storageHealth(){
+    try{const k="militopo_storage_test";localStorage.setItem(k,"1");localStorage.removeItem(k);return true}catch(e){return false}
+}
+function updateOfflineSafetyPanel(msg){
+    const p=document.getElementById("offlineSafetyPanel");if(!p)return;
+    const ok=storageHealth();
+    const saved=log&&log.lastSavedAt?new Date(log.lastSavedAt).toLocaleTimeString("es-ES",{hour:"2-digit",minute:"2-digit",second:"2-digit"}):"--";
+    p.style.display="block";
+    p.className=ok?"status ok offline-safe":"status err offline-safe big-warn";
+    p.innerHTML=(msg?("<b>"+msg+"</b><br>"):"")+"Modo offline preparado · guardado local: "+saved+"<br><span class='small'>Puedes perder cobertura o recargar: el recorrido se restaurará desde este móvil.</span><div class='recovery-actions'><button class='btn secondary' onclick='restoreBestSavedRun()'>♻️ RECUPERAR RECORRIDO GUARDADO</button><button class='btn secondary' onclick='showPartialResultQr()'>🆘 MOSTRAR QR DE RESCATE PARCIAL</button></div>";
+}
+async function precacheQrReader(){
+    if(window.jsQR)return true;
+    try{
+        const cached=localStorage.getItem(JSQR_CACHE_KEY);
+        if(cached){(new Function(cached))(); if(window.jsQR)return true;}
+    }catch(e){}
+    try{
+        if(!navigator.onLine)return false;
+        const r=await fetch("https://cdn.jsdelivr.net/npm/jsqr@1.4.0/dist/jsQR.min.js",{cache:"force-cache"});
+        if(r.ok){
+            const code=await r.text();
+            localStorage.setItem(JSQR_CACHE_KEY,code);
+            (new Function(code))();
+            return !!window.jsQR;
+        }
+    }catch(e){}
+    return false;
+}
 function init(){
     document.getElementById("eventInfo").innerHTML="Evento: <b>"+EVENT_DATA.eventId+"</b><br>"+(EVENT_DATA.eventName||"Orientación");
-    const s=localStorage.getItem(key())||localStorage.getItem(key()+"_backup_last");
-    if(s){
-        try{
-            log=JSON.parse(s);
-            pid=log.participantId;
-            route=EVENT_DATA.routes.find(r=>r.participantId===pid);
-            if(route){
-                renderLoaded();
-                toast("Recorrido restaurado");
-            }
-        }catch(e){}
-    }
     bindParticipantAutosave();
+    restoreBestSavedRun(true);
+    updateOfflineSafetyPanel("APP LISTA PARA TRABAJAR SIN COBERTURA");
+    precacheQrReader().then(ok=>{if(ok)updateOfflineSafetyPanel("LECTOR QR PREPARADO OFFLINE");});
 }
-function key(){return "militopo_runner_"+EVENT_DATA.eventId}function toast(m){const t=document.getElementById("toast");t.textContent=m;t.style.display="block";clearTimeout(t._t);t._t=setTimeout(()=>t.style.display="none",2500)}
+function key(){return baseKey()}function toast(m){const t=document.getElementById("toast");t.textContent=m;t.style.display="block";clearTimeout(t._t);t._t=setTimeout(()=>t.style.display="none",2500)}
 function manual(){document.getElementById("manualInput").style.display="block";document.getElementById("manualBtn").style.display="block"}function loadManual(){handleQr(document.getElementById("manualInput").value)}
 function parse(raw){const p=String(raw||"").trim().split("|");if(p.length>=4&&p[0].toUpperCase()==="ORI")return{ok:true,type:p[1].toUpperCase(),eventId:p[2],id:p[3],routeId:p[4]||""};return{ok:false}}
 function handleQr(raw){const q=parse(raw);if(!q.ok)return toast("QR no válido");if(q.eventId!==EVENT_DATA.eventId)return toast("QR de otro evento");if(q.type==="PARTICIPANT")return loadParticipant(q);if(q.type==="CONTROL")return scanControl(q.id);toast("QR no reconocido")}
-function loadParticipant(q){route=EVENT_DATA.routes.find(r=>r.participantId===q.id&&(!q.routeId||r.routeId===q.routeId));if(!route)return toast("Participante no encontrado");pid=route.participantId;const old=localStorage.getItem(key()+"_"+pid);if(old){try{log=JSON.parse(old)}catch(e){log=null}}if(!log)log={eventId:EVENT_DATA.eventId,participantId:pid,routeId:route.routeId,startTime:null,finishTime:null,scans:[],completed:false,missingControls:[]};save();renderLoaded();toast("Recorrido cargado")}
-function renderLoaded(){document.getElementById("race").style.display="block";document.getElementById("identity").className="status ok";document.getElementById("identity").innerHTML="<b>"+pid+"</b> · "+route.routeId+" cargado";document.getElementById("route").innerHTML="<b>Orden obligatorio</b><br><div class='route'>"+route.points.join(" → ")+"</div>";renderNext();renderScans();renderResult()}
+function loadParticipant(q){route=EVENT_DATA.routes.find(r=>r.participantId===q.id&&(!q.routeId||r.routeId===q.routeId));if(!route)return toast("Participante no encontrado");pid=route.participantId;const candidates=allRecoveryKeys(pid).map(readJsonKey);log=chooseBestLog(candidates);if(!log)log={eventId:EVENT_DATA.eventId,participantId:pid,routeId:route.routeId,startTime:null,finishTime:null,scans:[],completed:false,missingControls:[]};log.participantId=pid;log.routeId=route.routeId;save();renderLoaded();toast("Recorrido cargado y guardado offline")}
+
+function restoreBestSavedRun(silent){
+    const guesses=[];
+    try{guesses.push(readJsonKey(key()),readJsonKey(key()+"_backup_last"),readJsonKey(key()+"_emergency_last"))}catch(e){}
+    (EVENT_DATA.routes||[]).forEach(r=>allRecoveryKeys(r.participantId).forEach(k=>guesses.push(readJsonKey(k))));
+    const best=chooseBestLog(guesses);
+    if(!best){if(!silent)toast("No hay recorrido guardado en este móvil");return false}
+    pid=best.participantId;
+    route=EVENT_DATA.routes.find(r=>r.participantId===pid&&(!best.routeId||r.routeId===best.routeId))||EVENT_DATA.routes.find(r=>r.participantId===pid);
+    if(!route){if(!silent)toast("No se encuentra el recorrido guardado");return false}
+    log=best;save();renderLoaded();if(!silent)toast("Recorrido restaurado correctamente");return true;
+}
+
+function renderLoaded(){document.getElementById("race").style.display="block";document.getElementById("identity").className="status ok";document.getElementById("identity").innerHTML="<b>"+pid+"</b> · "+route.routeId+" cargado";document.getElementById("route").innerHTML="<b>Orden obligatorio</b><br><div class='route'>"+route.points.join(" → ")+"</div>";renderNext();renderScans();renderResult();updateOfflineSafetyPanel("RECORRIDO GUARDADO EN ESTE MÓVIL")}
 function scanControl(id){if(!route)return toast("Primero QR participante");if(id==="START")return startRace();if(id==="FINISH")return finishRace();if(!log.startTime)return toast("Primero SALIDA");if(log.finishTime)return toast("Ya finalizado");const exp=route.points.filter(x=>x!=="START"&&x!=="FINISH");const done=log.scans.filter(s=>s.status==="correct").length;const expected=exp[done]||"FINISH";const dup=log.scans.some(s=>s.controlId===id);let status=dup?"duplicate":id===expected?"correct":exp.includes(id)?"out_of_order":"wrong";log.scans.push({controlId:id,timestamp:new Date().toISOString(),expectedControlId:expected,status});save();renderNext();renderScans();toast(status==="correct"?"Baliza correcta":"Aviso: "+status)}
 function startRace(){if(!route)return toast("Primero QR participante");if(log.startTime)return toast("Salida ya registrada");log.startTime=new Date().toISOString();save();renderNext();renderScans();toast("Salida registrada")}
 function finishRace(){if(!route)return toast("Primero QR participante");if(!log.startTime)return toast("Primero SALIDA");const exp=route.points.filter(x=>x!=="START"&&x!=="FINISH");const done=log.scans.filter(s=>s.status==="correct").map(s=>s.controlId);log.missingControls=exp.filter(x=>!done.includes(x));log.finishTime=new Date().toISOString();log.completed=log.missingControls.length===0;log.resultPayload=resultPayload();save();renderNext();renderScans();renderResult();toast(log.completed?"Recorrido completo":"Llegada con pendientes")}
 function save(){
     if(!log||!pid)return;
-    const raw=JSON.stringify({...log,lastSavedAt:new Date().toISOString()});
+    log.lastSavedAt=safeNow();
+    log.appVersion=APP_VERSION;
+    const raw=JSON.stringify(log);
     try{
-        localStorage.setItem(key()+"_"+pid,raw);
-        localStorage.setItem(key(),raw);
-        localStorage.setItem(key()+"_backup_"+pid,raw);
-        localStorage.setItem(key()+"_backup_last",raw);
+        writeKeyEverywhere(key()+"_"+pid,raw);
+        writeKeyEverywhere(key(),raw);
+        writeKeyEverywhere(key()+"_backup_"+pid,raw);
+        writeKeyEverywhere(key()+"_backup_last",raw);
+        writeKeyEverywhere(key()+"_emergency_"+pid,raw);
+        writeKeyEverywhere(key()+"_emergency_last",raw);
+        window.name="MILITOPO_RUN_BACKUP:"+raw;
     }catch(e){
         console.warn("No se pudo guardar registro offline",e);
     }
+    updateOfflineSafetyPanel();
 }
 function renderNext(){const n=document.getElementById("next");if(!log.startTime){n.textContent="TE TOCA: SALIDA";return}if(log.finishTime){n.textContent=log.completed?"FINALIZADO OK":"FINALIZADO CON AVISOS";return}const exp=route.points.filter(x=>x!=="START"&&x!=="FINISH");const done=log.scans.filter(s=>s.status==="correct").length;n.textContent="TE TOCA: "+(exp[done]||"FINISH")}
 function renderScans(){let h="<div class='scan "+(log.startTime?"ok":"")+"'><b>SALIDA</b><span>"+(log.startTime?tm(log.startTime):"Pendiente")+"</span><span>"+(log.startTime?"✅":"⏳")+"</span></div>";log.scans.forEach(s=>{const cls=s.status==="correct"?"ok":"bad";h+="<div class='scan "+cls+"'><b>"+s.controlId+"</b><span>"+tm(s.timestamp)+" · tocaba "+s.expectedControlId+" · "+s.status+"</span><span>"+(s.status==="correct"?"✅":"⚠️")+"</span></div>"});h+="<div class='scan "+(log.finishTime?(log.completed?"ok":"bad"):"")+"'><b>LLEGADA</b><span>"+(log.finishTime?tm(log.finishTime):"Pendiente")+"</span><span>"+(log.finishTime?"🏁":"⏳")+"</span></div>";document.getElementById("scans").innerHTML=h}
+
+function partialResultPayload(){
+    if(!log||!pid||!route)return "";
+    return btoa(unescape(encodeURIComponent(JSON.stringify({type:"ORI_RESULT_PARTIAL",eventId:EVENT_DATA.eventId,participantId:pid,routeId:route.routeId,startTime:log.startTime,finishTime:log.finishTime||null,completed:!!log.completed,partial:true,scans:(log.scans||[]).map(s=>({id:s.controlId,t:s.timestamp,st:s.status})),missingControls:log.missingControls||[],lastSavedAt:log.lastSavedAt||safeNow()}))));
+}
+async function showPartialResultQr(){
+    if(!log||!pid||!route)return toast("Primero carga tu QR de participante");
+    const payload=partialResultPayload();
+    const result="ORI|RESULT|"+EVENT_DATA.eventId+"|"+pid+"|"+payload;
+    document.getElementById("result").style.display="block";
+    document.getElementById("summary").innerHTML="<b>QR DE RESCATE PARCIAL</b><br>"+pid+" · "+route.routeId+"<br>Enseña este QR al organizador si hay problema.";
+    document.getElementById("resultText").value=JSON.stringify({...log,result,partial:true},null,2);
+    try{const url=await QRCode.toDataURL(result,{margin:4,width:300,errorCorrectionLevel:"M"});document.getElementById("resultQr").innerHTML="<img src='"+url+"'><div class='result-qr-instruction'>🆘 QR DE RESCATE PARCIAL<br>ENSEÑA ESTE QR AL ORGANIZADOR</div>"}catch(e){toast("No se pudo generar QR parcial")}
+    save();
+}
+
 function resultPayload(){return btoa(unescape(encodeURIComponent(JSON.stringify({type:"ORI_RESULT",eventId:EVENT_DATA.eventId,participantId:pid,routeId:route.routeId,startTime:log.startTime,finishTime:log.finishTime,completed:log.completed,scans:log.scans.map(s=>({id:s.controlId,t:s.timestamp,st:s.status})),missingControls:log.missingControls||[]}))))}
-async function renderResult(){const sec=document.getElementById("result");if(!log||!log.finishTime){sec.style.display="none";return}sec.style.display="block";const payload=log.resultPayload||resultPayload();const result="ORI|RESULT|"+EVENT_DATA.eventId+"|"+pid+"|"+payload;document.getElementById("summary").innerHTML="<b>"+pid+"</b> · "+route.routeId+"<br>"+(log.completed?"✅ Completo":"⚠️ Pendientes: "+(log.missingControls||[]).join(", "));document.getElementById("resultText").value=JSON.stringify({...log,result},null,2);try{const url=await QRCode.toDataURL(result,{margin:4,width:300,errorCorrectionLevel:"M"});document.getElementById("resultQr").innerHTML="<img src='"+url+"'><div class='small'>QR final de resultado</div>"}catch(e){document.getElementById("resultQr").innerHTML="<div class='status err'>No se pudo generar QR final</div>"}}
+async function renderResult(){const sec=document.getElementById("result");if(!log||!log.finishTime){sec.style.display="none";return}sec.style.display="block";const payload=log.resultPayload||resultPayload();const result="ORI|RESULT|"+EVENT_DATA.eventId+"|"+pid+"|"+payload;document.getElementById("summary").innerHTML="<b>"+pid+"</b> · "+route.routeId+"<br>"+(log.completed?"✅ Completo":"⚠️ Pendientes: "+(log.missingControls||[]).join(", "));document.getElementById("resultText").value=JSON.stringify({...log,result},null,2);try{const url=await QRCode.toDataURL(result,{margin:4,width:300,errorCorrectionLevel:"M"});document.getElementById("resultQr").innerHTML="<img src='"+url+"'><div class='result-qr-instruction'>📲 ENSEÑA ESTE QR DE RESULTADOS AL ORGANIZADOR<br>NO CIERRES ESTA PANTALLA HASTA QUE LO ESCANEEN</div>"}catch(e){document.getElementById("resultQr").innerHTML="<div class='status err'>No se pudo generar QR final</div>"}}
 function copyResult(){const t=document.getElementById("resultText");t.select();document.execCommand("copy");toast("Copiado")}function downloadResult(){const b=new Blob([document.getElementById("resultText").value],{type:"application/json"});const a=document.createElement("a");a.href=URL.createObjectURL(b);a.download="resultado_"+(pid||"participante")+".json";a.click();URL.revokeObjectURL(a.href)}function tm(i){return new Date(i).toLocaleTimeString("es-ES",{hour:"2-digit",minute:"2-digit",second:"2-digit"})}
 function bindParticipantAutosave(){
     document.addEventListener("visibilitychange",()=>{if(document.visibilityState==="hidden")save()});
     window.addEventListener("pagehide",save);
     window.addEventListener("beforeunload",save);
-    setInterval(save,7000);
+    window.addEventListener("offline",()=>updateOfflineSafetyPanel("SIN COBERTURA: EL RECORRIDO SIGUE GUARDADO"));
+    window.addEventListener("online",()=>{updateOfflineSafetyPanel("COBERTURA RECUPERADA");precacheQrReader()});
+    setInterval(save,4000);
 }
 
-function loadJsQr(){return new Promise((res,rej)=>{if(window.jsQR)return res(true);const s=document.createElement("script");s.src="https://cdn.jsdelivr.net/npm/jsqr@1.4.0/dist/jsQR.min.js";s.onload=()=>res(true);s.onerror=()=>rej(new Error("No se pudo cargar jsQR"));document.head.appendChild(s)})}
+function loadJsQr(){return new Promise(async(res,rej)=>{
+    if(window.jsQR)return res(true);
+    try{const ok=await precacheQrReader();if(ok)return res(true)}catch(e){}
+    try{
+        if(!navigator.onLine)return rej(new Error("Sin lector QR offline"));
+        const s=document.createElement("script");
+        s.src="https://cdn.jsdelivr.net/npm/jsqr@1.4.0/dist/jsQR.min.js";
+        s.onload=()=>{try{res(true)}catch(e){res(true)}};
+        s.onerror=()=>rej(new Error("No se pudo cargar jsQR"));
+        document.head.appendChild(s);
+    }catch(e){rej(e)}
+})}
 
 async function startQrCamera(){
   const overlay=document.getElementById("cameraOverlay");
@@ -1490,7 +1589,7 @@ async function startQrCamera(){
       await loadJsQr();
       useJsQr=!!window.jsQR;
     }catch(e){
-      if(st){st.className="status err";st.textContent="No se pudo cargar el lector QR. Usa MANUAL.";}
+      if(st){st.className="status err";st.textContent="Sin lector QR disponible offline en este navegador. Usa MANUAL o muestra el QR al organizador para rescate.";}
       return;
     }
   }
